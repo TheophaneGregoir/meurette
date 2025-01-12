@@ -259,9 +259,6 @@ body {
 
 *:focus {
   outline: none;
-  /* outline: 4px dotted #d84d52; */
-  /* outline-offset: 8px; */
-  box-shadow: 0 0 0 0.8rem rgb(216, 77, 82, 0.5);
 }
 
 /* HELPER/SETTINGS CLASSES */
