@@ -119,6 +119,11 @@
 
 .grid--menu {
   gap: 3.2rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+.step-text-box {
+  padding: 1.2rem;
 }
 
 .step-number {
@@ -128,33 +133,45 @@
   margin-bottom: 1.2rem;
 }
 
-.step-text-box {
-  padding: 4.8rem;
-  background-color: #f7dbdc;
-  border-radius: 11px;
+.step-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+
+.step-heading span {
+  font-family: "Borel", sans-serif;
+  color: #d84d52;
 }
 
 .details-text-box {
-  padding: 4.8rem;
-  background-color: #f7dbdc;
-  border-radius: 11px;
+  font-family: "Borel", sans-serif;
+  padding: 1.2rem;
+  line-height: 4rem;
 }
 
 .details-heading {
-  font-size: 3.2rem;
-  font-weight: 500;
-  color: #333;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #d84d52;
 }
 
 .details-list {
-  list-style: none;
-  margin-top: 2.4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  padding: 1.2rem;
 }
 
 .details-list li {
-  font-size: 3.2rem;
-  font-weight: 500;
-  color: #333;
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #777;
+}
+
+.details-list li:not(:last-child) {
+  margin-bottom: 0.6rem;
 }
 
 /***********************/
