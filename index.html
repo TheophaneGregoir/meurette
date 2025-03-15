@@ -18,7 +18,7 @@
     <title>Meurette</title>
   </head>
   <body>
-    <header class="header sticky">
+    <header class="header">
       <a href="#">
         <img
           class="nav-logo"
@@ -32,23 +32,86 @@
           <li><a class="main-nav-link" href="#">Nos restaurants</a></li>
           <li><a class="main-nav-link" href="#">On recrute</a></li>
           <li>
-            <a class="instagram-link" href="https://www.instagram.com/meurette_groupe/?hl=fr">
+            <a
+              class="instagram-link"
+              href="https://www.instagram.com/meurette_groupe/?hl=fr"
+            >
               <img
-              alt="Logo Instagram"
-              src="img/illustrations/logo/logo-instagram.png"
+                alt="Logo Instagram"
+                src="img/illustrations/logo/logo-instagram.png"
               />
             </a>
           </li>
-          <li><a class="main-nav-link nav-cta" href="https://www.ubereats.com/fr/store/meurette/siCtw1vvVZCQbvwp7vjMBg?srsltid=AfmBOoooJiI81GOaPpAlnMT2ex2VcxXy4Kc2gCNErTx84cNzaa0k7tdA">Commander</a></li>
+          <li>
+            <a
+              class="main-nav-link nav-cta"
+              href="https://www.ubereats.com/fr/store/meurette/siCtw1vvVZCQbvwp7vjMBg?srsltid=AfmBOoooJiI81GOaPpAlnMT2ex2VcxXy4Kc2gCNErTx84cNzaa0k7tdA"
+              >Commander</a
+            >
+          </li>
         </ul>
       </nav>
     </header>
 
     <main>
       <section class="section-hero">
-        <a class="hero-cta" href="https://www.ubereats.com/fr/store/meurette/siCtw1vvVZCQbvwp7vjMBg?srsltid=AfmBOoooJiI81GOaPpAlnMT2ex2VcxXy4Kc2gCNErTx84cNzaa0k7tdA">Commander</a>
+        <a
+          class="hero-cta"
+          href="https://www.ubereats.com/fr/store/meurette/siCtw1vvVZCQbvwp7vjMBg?srsltid=AfmBOoooJiI81GOaPpAlnMT2ex2VcxXy4Kc2gCNErTx84cNzaa0k7tdA"
+          >Commander</a
+        >
       </section>
-      </
+
+      <section class="section-concept"></section>
+
+      <section class="section-menu"></section>
+
+      <section class="section-restaurants"></section>
+
+      <section class="section-cta" id="cta">
+        <div class="container">
+          <div class="cta">
+            <div class="cta-text-box">
+              <h2 class="heading-secondary">Rejoins l'équipe</h2>
+              <p class="cta-text">
+                Si tu veux rejoindre un de nos restaurants pour nous aider à
+                préparer de bons petits plats, n'hésite plus !
+              </p>
+              <form class="cta-form" name="sign-up" netlify>
+                <div>
+                  <label for="full-name">Mon nom</label>
+                  <input
+                    id="full-name"
+                    type="text"
+                    class="cta-input"
+                    placeholder="Oeuf Mayo"
+                    name="full-name"
+                    required
+                  />
+                </div>
+                <div>
+                  <label for="email">Mon email</label>
+                  <input
+                    id="email"
+                    type="email"
+                    class="cta-input"
+                    placeholder="oeuf-mayo@moi.com"
+                    name="email"
+                    required
+                  />
+                </div>
+
+                <button class="btn btn--form">Je postule</button>
+              </form>
+            </div>
+            <div
+              class="cta-img-box"
+              role="img"
+              aria-label="L'équipe Meurette en cuisine"
+            ></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="footer"></footer>

@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #f7dbdc;
 
   /* Because we want header to be sticky later */
   height: 9.6rem;
@@ -44,7 +44,7 @@
   text-decoration: none;
   color: #333;
   font-weight: 700;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   /* top | right | bottom | left */
   padding: 1.2rem 0 0 0;
   transition: all 0.3s;
@@ -103,6 +103,86 @@
 .hero-cta:hover,
 .hero-cta:active {
   background-color: #822e31;
+}
+
+/***********************/
+/* RECRUTEMENT SECTION */
+/***********************/
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #e07175, #822e31);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #411719;
+}
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(130, 46, 49, 0.383),
+      rgba(64, 23, 25, 0.511)
+    ),
+    url("../img/images/team/DSC09324.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  padding: 4.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: inherit;
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px rgba(173, 170, 166, 0.476);
 }
 
 /**************************/
