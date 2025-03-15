@@ -7,7 +7,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #f7dbdc;
+  background-color: #fbedee;
 
   /* Because we want header to be sticky later */
   height: 9.6rem;
@@ -147,6 +147,7 @@
 
 .section-menu {
   padding: 9.6rem 0;
+  background-color: #fbedee;
 }
 
 .grid--menu {
@@ -204,6 +205,14 @@
 
 .details-list li:not(:last-child) {
   margin-bottom: 0.6rem;
+}
+
+/***********************/
+/* RESTAURANTS SECTION */
+/***********************/
+
+.section-restaurants {
+  padding: 9.6rem 0;
 }
 
 /***********************/
@@ -271,7 +280,7 @@
   font-size: 1.6rem;
   font-family: inherit;
   border: none;
-  background-color: #fdf2e9;
+  background-color: #fbedee;
   border-radius: 9px;
   box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
   color: inherit;
@@ -298,6 +307,7 @@
 .footer {
   padding: 6.4rem 0;
   border-top: 1px solid #eee;
+  background-color: #fbedee;
 }
 
 .grid--footer {
@@ -310,7 +320,7 @@
 }
 
 .logo-col img {
-  height: 24rem;
+  height: 32rem;
   place-self: center;
 }
 
