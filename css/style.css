@@ -106,6 +106,58 @@
 }
 
 /***********************/
+/* CONCEPT SECTION */
+/***********************/
+
+/***********************/
+/* MENU SECTION */
+/***********************/
+
+.section-menu {
+  padding: 9.6rem 0;
+}
+
+.grid--menu {
+  gap: 3.2rem;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+
+.step-text-box {
+  padding: 4.8rem;
+  background-color: #f7dbdc;
+  border-radius: 11px;
+}
+
+.details-text-box {
+  padding: 4.8rem;
+  background-color: #f7dbdc;
+  border-radius: 11px;
+}
+
+.details-heading {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+.details-list {
+  list-style: none;
+  margin-top: 2.4rem;
+}
+
+.details-list li {
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #333;
+}
+
+/***********************/
 /* RECRUTEMENT SECTION */
 /***********************/
 
@@ -185,12 +237,63 @@
   box-shadow: 0 0 0 8px rgba(173, 170, 166, 0.476);
 }
 
-/**************************/
+/***********************/
 /* FOOTER */
-/**************************/
+/***********************/
 
 .footer {
-  background-color: #fff;
-  padding: 12.8rem 0;
+  padding: 6.4rem 0;
   border-top: 1px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.footer-logo {
+  place-self: center;
+}
+
+.logo-col img {
+  height: 24rem;
+  place-self: center;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #767676;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.address {
+  margin-bottom: 1.6rem;
 }
