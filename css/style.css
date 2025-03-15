@@ -286,6 +286,11 @@
   box-shadow: 0 0 0 8px rgba(173, 170, 166, 0.476);
 }
 
+.cta-form button {
+  margin: 0 8rem;
+  grid-column: span 2;
+}
+
 /***********************/
 /* FOOTER */
 /***********************/
