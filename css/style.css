@@ -7,19 +7,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: rgb(255, 255, 255);
+  background-color: #fbedee;
 
   /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 4.8rem 4.8rem;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  z-index: 1000;
 }
 
 .nav-logo {
@@ -44,7 +36,7 @@
   text-decoration: none;
   color: #333;
   font-weight: 700;
-  font-size: 3.2rem;
+  font-size: 2.4rem;
   /* top | right | bottom | left */
   padding: 1.2rem 0 0 0;
   transition: all 0.3s;
@@ -72,6 +64,23 @@
   height: 4.8rem;
 }
 
+.sticky .header {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  height: 8rem;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: rgba(251, 237, 238, 0.97);
+  z-index: 9999;
+  box-shadow: 0 1.2rem 3.2rem rgba(0, 0, 0, 0.1);
+}
+
+.sticky .section-hero {
+  margin-top: 9.6rem;
+}
+
 /**************************/
 /* HERO SECTION */
 /**************************/
@@ -84,6 +93,7 @@
   justify-content: center;
   background-image: url(../img/images/food-zenital/wallpaper.jpg);
   background-size: cover;
+  background-size: center;
 }
 
 .hero-cta:link,
@@ -105,12 +115,333 @@
   background-color: #822e31;
 }
 
-/**************************/
+/***********************/
+/* CONCEPT SECTION */
+/***********************/
+
+.section-concept {
+  padding: 9.6rem 0;
+}
+
+.grid--concept {
+  gap: 1rem;
+}
+
+.concept-text-box {
+  grid-column: span 3;
+}
+
+.concept-text {
+  font-family: "Borel", sans-serif;
+  font-size: 2.4rem;
+  line-height: 4rem;
+  font-weight: 700;
+  color: #555;
+}
+
+.concept-text span {
+  color: #d84d52;
+}
+
+.concept-img-box {
+  padding: 0 3.2rem;
+}
+
+.concept-img {
+  height: 32rem;
+}
+
+/***********************/
+/* MENU SECTION */
+/***********************/
+
+.section-menu {
+  padding: 9.6rem 0;
+  background-color: #fbedee;
+}
+
+.grid--menu {
+  gap: 1rem;
+  grid-template-columns: 1fr 2fr;
+}
+
+.step-text-box {
+  padding: 1.2rem;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #f3cacb;
+  margin-bottom: 1.2rem;
+}
+
+.step-heading {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+  color: #333;
+}
+
+.step-heading span {
+  font-family: "Borel", sans-serif;
+  color: #d84d52;
+}
+
+.details-text-box {
+  font-family: "Borel", sans-serif;
+  padding: 1.2rem;
+  line-height: 4rem;
+}
+
+.details-heading {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #333;
+}
+
+.details-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  list-style-type: none;
+  padding: 1.2rem;
+}
+
+.details-list li {
+  font-size: 1.8rem;
+  font-weight: 300;
+  color: #777;
+}
+
+.details-list li:not(:last-child) {
+  margin-bottom: 0.6rem;
+}
+
+/***********************/
+/* RESTAURANTS SECTION */
+/***********************/
+
+.section-restaurants {
+  padding: 9.6rem 0;
+}
+
+.restaurant-element {
+  text-decoration: none;
+  border-radius: 11px;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.4s;
+  width: 75%;
+  height: 32rem;
+  padding: 4.6rem;
+  background-size: cover;
+  background-position: center;
+}
+
+.restaurant-element:hover {
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.075);
+}
+
+.restaurant-element-first {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(22, 8, 8, 0.85),
+      rgba(65, 23, 25, 0.65)
+    ),
+    url("../img/images/restaurants/DSC08721.png");
+  justify-self: end;
+}
+
+.restaurant-element-second {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(22, 8, 8, 0.85),
+      rgba(65, 23, 25, 0.65)
+    ),
+    url("../img/images/restaurants/DSC08750.png");
+  position: relative;
+}
+
+.restaurant-element-second::before {
+  content: "On arrive !";
+  position: absolute;
+  top: 16%;
+  right: -18%;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: #fff;
+  background-color: #d84d52;
+  padding: 0.8rem 8rem;
+  transform: rotate(45deg);
+}
+
+.restaurant-header {
+  font-family: "Borel", sans-serif;
+  color: #fff;
+  margin-bottom: 1.6rem;
+  text-align: center;
+}
+
+.restaurant-name {
+  margin-top: 4.8rem;
+  margin-bottom: 4.8rem;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.restaurant-address {
+  margin-bottom: 1.2rem;
+  font-size: 2rem;
+}
+
+.restaurant-town {
+  font-size: 2rem;
+}
+/***********************/
+/* RECRUTEMENT SECTION */
+/***********************/
+
+.section-cta {
+  padding: 4.8rem 0 12.8rem 0;
+}
+
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  border-radius: 11px;
+
+  background-image: linear-gradient(to right bottom, #e07175, #822e31);
+  overflow: hidden;
+}
+
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #411719;
+}
+.cta .heading-secondary {
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+
+.cta-img-box {
+  background-image: linear-gradient(
+      to right bottom,
+      rgba(130, 46, 49, 0.383),
+      rgba(64, 23, 25, 0.511)
+    ),
+    url("../img/images/team/DSC09324.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.cta-form {
+  padding: 4.8rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+
+.cta-form label {
+  font-size: 1.6rem;
+  font-weight: 500;
+  display: block;
+  margin-bottom: 1.2rem;
+}
+
+.cta-form input,
+.cta-form select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.6rem;
+  font-family: inherit;
+  border: none;
+  background-color: #fbedee;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+  color: inherit;
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 8px rgba(173, 170, 166, 0.476);
+}
+
+.cta-form button {
+  margin: 0 8rem;
+  grid-column: span 2;
+}
+
+/***********************/
 /* FOOTER */
-/**************************/
+/***********************/
 
 .footer {
-  background-color: #fff;
-  padding: 12.8rem 0;
+  padding: 6.4rem 0;
   border-top: 1px solid #eee;
+  background-color: #fbedee;
+}
+
+.grid--footer {
+  grid-template-columns: 1fr 1fr 1fr;
+  align-items: center;
+}
+
+.footer-logo {
+  place-self: center;
+}
+
+.logo-col img {
+  height: 32rem;
+  place-self: center;
+}
+
+.copyright {
+  font-size: 1.4rem;
+  line-height: 1.6rem;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #333;
+
+  margin-bottom: 4rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.6;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  color: #767676;
+  font-size: 1.6rem;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
+}
+
+.address {
+  margin-bottom: 1.6rem;
 }
