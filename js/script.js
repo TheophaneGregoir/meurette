@@ -36,10 +36,15 @@ allLinks.forEach(function (link) {
         behavior: "smooth",
       });
 
-    // Scroll to other links
+    // Scroll to other links in the page
     if (href !== "#" && href.startsWith("#")) {
       const sectionEl = document.querySelector(href);
       sectionEl.scrollIntoView({ behavior: "smooth" });
+    }
+
+    // Scroll to other links outside the page
+    if (!href.startsWith("#")) {
+      window.open(href, "_blank");
     }
 
     // Close mobile navigation
