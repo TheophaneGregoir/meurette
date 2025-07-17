@@ -1,0 +1,21 @@
+{
+  "plats": [
+    "Boeuf bourguignon",
+    "Blanquette de veau",
+    "Coq au vin",
+    "Curry de légumes"
+  ],
+  "accompagnements": [
+    "Haricots verts",
+    "Ratatouille",
+    "Purée de pommes de terre",
+    "Gratin dauphinois",
+    "Salade verte",
+    "Riz blanc"
+  ],
+  "toppings": [
+    "Oignons frits",
+    "Champignons sautés",
+    "Croûtons"
+  ]
+}
