@@ -137,6 +137,7 @@
   line-height: 1.8;
   font-weight: 700;
   color: #555;
+  margin: 1.5em; /* bottom margin creates the "line space" */
 }
 
 .concept-text span {
@@ -148,10 +149,19 @@
 }
 
 .concept-img {
+  border-radius: 50px;
   height: 32rem;
   /* Smoothly fade the image edges into the section background */
-  -webkit-mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
-          mask-image: radial-gradient(circle, rgba(0, 0, 0, 1) 80%, rgba(0, 0, 0, 0) 100%);
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 60%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 /***********************/
