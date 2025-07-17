@@ -132,9 +132,9 @@
 }
 
 .concept-text {
-  font-family: "Borel", sans-serif;
+  font-family: "Montserrat", sans-serif;
   font-size: 2.4rem;
-  line-height: 4rem;
+  line-height: 1.8;
   font-weight: 700;
   color: #555;
 }
@@ -189,9 +189,9 @@
 }
 
 .details-text-box {
-  font-family: "Borel", sans-serif;
+  font-family: "Montserrat", sans-serif;
   padding: 1.2rem;
-  line-height: 4rem;
+  line-height: 1.8;
 }
 
 .details-heading {
@@ -278,7 +278,7 @@
 }
 
 .restaurant-header {
-  font-family: "Borel", sans-serif;
+  font-family: "Montserrat", sans-serif;
   color: #fff;
   margin-bottom: 1.6rem;
   text-align: center;
