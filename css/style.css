@@ -19,6 +19,19 @@
   height: 9.2rem;
 }
 
+/* Mobile navigation button hidden on desktop */
+.btn-mobile-nav {
+  display: none;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.icon-mobile-nav {
+  font-size: 4rem;
+  color: #333;
+}
+
 /**************************/
 /* NAVIGATION */
 /**************************/
