@@ -1,0 +1,337 @@
+/* rem and em do not depend on html font-size in media
+queries. In fact, 1rem=1em=16px */
+
+/***********************/
+/* BELOW 1300px (large laptops) */
+/***********************/
+
+/* 81em because 1300px/16px */
+
+@media (max-width: 81em) {
+  .nav-logo {
+    padding: 0.2rem 0.2rem;
+    height: 7.2rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.2rem;
+  }
+
+  .instagram-link img {
+    height: 4rem;
+  }
+}
+
+/***********************/
+/* BELOW 1100px (regular aptops) */
+/***********************/
+
+/* 69em because 1100px/16px */
+
+@media (max-width: 69em) {
+  /* V2 */
+
+  html {
+    font-size: 56.25%;
+  }
+
+  .grid {
+    display: grid;
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+
+    /* margin-bottom: 9.6rem; */
+  }
+
+  .grid:not(:last-child) {
+    margin-bottom: 4.8rem;
+  }
+
+  .nav-logo {
+    padding: 0.2rem 0.2rem;
+    height: 6.4rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2rem;
+  }
+
+  .instagram-link img {
+    height: 3.6rem;
+  }
+
+  .grid {
+    row-gap: 6.4rem;
+    column-gap: 4.8rem;
+  }
+
+  .heading-secondary {
+    font-size: 3.3rem;
+  }
+
+  .subheading {
+    font-size: 2.4rem;
+  }
+
+  .header {
+    padding: 0 3.2rem;
+  }
+}
+
+/***********************/
+/* BELOW 900px (tablets) */
+/***********************/
+
+/* 56em because 900px/16px */
+
+@media (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    display: grid;
+    column-gap: 2.4rem;
+    row-gap: 3.6rem;
+
+    /* margin-bottom: 9.6rem; */
+  }
+
+  .grid:not(:last-child) {
+    margin-bottom: 3.6rem;
+  }
+
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
+
+  .subheading {
+    font-size: 2rem;
+  }
+
+  /* MOBILE NAV */
+  .btn-mobile-nav {
+    display: block;
+    z-index: 1000;
+  }
+
+  .main-nav-list {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .main-nav {
+    background-color: rgba(255, 255, 255, 0.9);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+
+    /* Hidden by default */
+
+    /* 1) Hide it visually */
+    opacity: 0;
+
+    /* 2) make it unaccessible to mouse / keyboard */
+    pointer-events: none;
+
+    /* 3) Move it off screen */
+    visibility: hidden;
+  }
+
+  .nav-open .main-nav {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0%);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 3rem;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 38rem;
+    grid-row: 1 / -1;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(130, 46, 49, 0.383),
+        rgba(64, 23, 25, 0.511)
+      ),
+      url("../img/images/team/DSC09918.jpg");
+    background-position: center 30%;
+  }
+}
+
+/***********************/
+/* BELOW 700px (Mobile) */
+/***********************/
+
+/* 44em because 700px/16px */
+
+@media (max-width: 44em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  .grid {
+    display: grid;
+    column-gap: 1.6rem;
+    row-gap: 2.4rem;
+  }
+
+  .grid:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 2.4rem;
+  }
+
+  /* Section Hero */
+
+  .hero-cta:link,
+  .hero-cta:visited {
+    font-size: 4rem;
+    padding: 5.4rem 4.8rem 2.4rem 4.8rem;
+    margin-top: 40rem;
+  }
+
+  /* Section Concept */
+
+  .section-concept {
+    padding: 3.2rem 0;
+  }
+
+  .grid--concept {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .concept-text-box {
+    padding: 1.2rem 1.2rem;
+    max-width: 100%;
+  }
+  .concept-text {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+  }
+
+  .concept-img-box {
+    grid-row: 2;
+    padding: 0;
+  }
+
+  .concept-img {
+    height: 33vw;
+    max-height: 100vw;
+  }
+
+  /* Section Menu */
+
+  .section-menu {
+    padding: 3.2rem 0;
+  }
+
+  .grid--menu {
+    grid-template-columns: 1fr;
+    row-gap: 0rem;
+  }
+
+  .step-number {
+    font-size: 6.4rem;
+  }
+  .step-heading {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .details-text-box {
+    padding: 0;
+    margin-bottom: 2.4rem;
+  }
+  .details-list li {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #777;
+  }
+  .details-heading {
+    display: none;
+  }
+
+  /* Section Restaurants */
+
+  .section-restaurants {
+    padding: 3.2rem 0;
+  }
+
+  .restaurant-element-first {
+    justify-self: center;
+  }
+
+  .restaurant-element-second {
+    justify-self: center;
+  }
+
+  /* Section CTA */
+
+  .section-cta {
+    padding: 3.2rem 0;
+  }
+
+  .cta-form {
+    padding: 2em;
+    grid-template-columns: 1fr;
+  }
+
+  .cta-input-name {
+    grid-row: 1;
+  }
+  .cta-input-email {
+    grid-row: 2;
+  }
+
+  .cta-form button {
+    margin: 0;
+  }
+
+  /* Section Footer */
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.4rem;
+  }
+
+  .logo-col img {
+    height: 16rem;
+  }
+  .copyright-col {
+    grid-column: 1 / -1;
+  }
+}
