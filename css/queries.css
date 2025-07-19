@@ -263,6 +263,10 @@ queries. In fact, 1rem=1em=16px */
     grid-template-columns: 1fr;
     row-gap: 0rem;
   }
+
+  .step-number {
+    font-size: 6.4rem;
+  }
   .step-heading {
     font-size: 2.4rem;
     margin-bottom: 0.2rem;
@@ -315,5 +319,19 @@ queries. In fact, 1rem=1em=16px */
 
   .cta-form button {
     margin: 0;
+  }
+
+  /* Section Footer */
+
+  .grid--footer {
+    grid-template-columns: 1fr 1fr;
+    row-gap: 2.4rem;
+  }
+
+  .logo-col img {
+    height: 16rem;
+  }
+  .copyright-col {
+    grid-column: 1 / -1;
   }
 }
