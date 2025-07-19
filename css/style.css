@@ -113,7 +113,7 @@
   justify-content: center;
   background-image: url(../img/images/food-zenital/wallpaper.jpg);
   background-size: cover;
-  background-size: center;
+  background-position: center center;
 }
 
 .hero-cta:link,

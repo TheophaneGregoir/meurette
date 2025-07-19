@@ -2,7 +2,29 @@
 queries. In fact, 1rem=1em=16px */
 
 /***********************/
-/* BELOW 1100px (lanscape tablets) TO BE CHANGED to lower  */
+/* BELOW 1300px (large laptops) */
+/***********************/
+
+/* 81em because 1300px/16px */
+
+@media (max-width: 81em) {
+  .nav-logo {
+    padding: 0.2rem 0.2rem;
+    height: 7.2rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2.2rem;
+  }
+
+  .instagram-link img {
+    height: 4rem;
+  }
+}
+
+/***********************/
+/* BELOW 1100px (regular aptops) */
 /***********************/
 
 /* 69em because 1100px/16px */
@@ -12,6 +34,32 @@ queries. In fact, 1rem=1em=16px */
 
   html {
     font-size: 56.25%;
+  }
+
+  .grid {
+    display: grid;
+    column-gap: 3.2rem;
+    row-gap: 4.8rem;
+
+    /* margin-bottom: 9.6rem; */
+  }
+
+  .grid:not(:last-child) {
+    margin-bottom: 4.8rem;
+  }
+
+  .nav-logo {
+    padding: 0.2rem 0.2rem;
+    height: 6.4rem;
+  }
+
+  .main-nav-link:link,
+  .main-nav-link:visited {
+    font-size: 2rem;
+  }
+
+  .instagram-link img {
+    height: 3.6rem;
   }
 
   .grid {
@@ -29,6 +77,30 @@ queries. In fact, 1rem=1em=16px */
 
   .header {
     padding: 0 3.2rem;
+  }
+}
+
+/***********************/
+/* BELOW 900px (tablets) */
+/***********************/
+
+/* 56em because 900px/16px */
+
+@media (max-width: 56em) {
+  html {
+    font-size: 50%;
+  }
+
+  .grid {
+    display: grid;
+    column-gap: 2.4rem;
+    row-gap: 3.6rem;
+
+    /* margin-bottom: 9.6rem; */
+  }
+
+  .grid:not(:last-child) {
+    margin-bottom: 3.6rem;
   }
 
   /* MOBILE NAV */
@@ -90,10 +162,78 @@ queries. In fact, 1rem=1em=16px */
   .main-nav-link:visited {
     font-size: 3rem;
   }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-img-box {
+    height: 38rem;
+    grid-row: 1 / -1;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(130, 46, 49, 0.383),
+        rgba(64, 23, 25, 0.511)
+      ),
+      url("../img/images/team/DSC09918.jpg");
+    background-position: center 30%;
+  }
 }
 
 /***********************/
-/* BELOW 850px (lanscape tablets) */
+/* BELOW 700px (Mobile) */
 /***********************/
 
-/* 69em because 1100px/16px */
+/* 44em because 700px/16px */
+
+@media (max-width: 44em) {
+  .grid--2-cols,
+  .grid--3-cols,
+  .grid--4-cols {
+    grid-template-columns: 1fr;
+  }
+
+  /* Section Concept */
+
+  .section-concept {
+    padding: 3.2rem 0;
+  }
+
+  /* Section Menu */
+
+  .section-menu {
+    padding: 3.2rem 0;
+  }
+
+  /* Section Restaurants */
+
+  .section-restaurants {
+    padding: 3.2rem 0;
+  }
+
+  .restaurant-element-first {
+    justify-self: center;
+  }
+
+  .restaurant-element-second {
+    justify-self: center;
+  }
+
+  /* Section CTA */
+
+  .section-cta {
+    padding: 3.2rem 0;
+  }
+
+  .cta-form {
+    padding: 2em;
+    grid-template-columns: 1fr;
+  }
+
+  .cta-input-name {
+    grid-row: 1;
+  }
+  .cta-input-email {
+    grid-row: 2;
+  }
+}
