@@ -103,6 +103,14 @@ queries. In fact, 1rem=1em=16px */
     margin-bottom: 3.6rem;
   }
 
+  .heading-secondary {
+    font-size: 2.8rem;
+  }
+
+  .subheading {
+    font-size: 2rem;
+  }
+
   /* MOBILE NAV */
   .btn-mobile-nav {
     display: block;
@@ -193,16 +201,84 @@ queries. In fact, 1rem=1em=16px */
     grid-template-columns: 1fr;
   }
 
+  .grid {
+    display: grid;
+    column-gap: 1.6rem;
+    row-gap: 2.4rem;
+  }
+
+  .grid:not(:last-child) {
+    margin-bottom: 2.4rem;
+  }
+
+  .heading-secondary {
+    margin-bottom: 2.4rem;
+  }
+
+  /* Section Hero */
+
+  .hero-cta:link,
+  .hero-cta:visited {
+    font-size: 4rem;
+    padding: 5.4rem 4.8rem 2.4rem 4.8rem;
+    margin-top: 40rem;
+  }
+
   /* Section Concept */
 
   .section-concept {
     padding: 3.2rem 0;
   }
 
+  .grid--concept {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .concept-text-box {
+    padding: 1.2rem 1.2rem;
+    max-width: 100%;
+  }
+  .concept-text {
+    margin: 0 1rem;
+    font-size: 1.6rem;
+  }
+
+  .concept-img-box {
+    grid-row: 2;
+    padding: 0;
+  }
+
+  .concept-img {
+    height: 33vw;
+    max-height: 100vw;
+  }
+
   /* Section Menu */
 
   .section-menu {
     padding: 3.2rem 0;
+  }
+
+  .grid--menu {
+    grid-template-columns: 1fr;
+    row-gap: 0rem;
+  }
+  .step-heading {
+    font-size: 2.4rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .details-text-box {
+    padding: 0;
+    margin-bottom: 2.4rem;
+  }
+  .details-list li {
+    font-size: 1.4rem;
+    font-weight: 400;
+    color: #777;
+  }
+  .details-heading {
+    display: none;
   }
 
   /* Section Restaurants */
@@ -235,5 +311,9 @@ queries. In fact, 1rem=1em=16px */
   }
   .cta-input-email {
     grid-row: 2;
+  }
+
+  .cta-form button {
+    margin: 0;
   }
 }
