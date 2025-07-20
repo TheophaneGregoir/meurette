@@ -258,6 +258,10 @@
   padding: 9.6rem 0;
 }
 
+.grid--restaurants {
+  grid-template-columns: repeat(2, 1fr);
+}
+
 .restaurant-element {
   text-decoration: none;
   border-radius: 11px;
