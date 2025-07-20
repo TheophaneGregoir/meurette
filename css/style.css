@@ -107,7 +107,7 @@
 
 .section-hero {
   font-family: "Borel", sans-serif;
-  height: 100vh;
+  height: calc(100vh - 9.6rem);
   display: flex;
   align-items: center;
   justify-content: center;
