@@ -21,3 +21,24 @@ collections:
           - label: "Toppings"
             name: "toppings"
             widget: list
+  - name: "content"
+    label: "Contenu de la page"
+    files:
+      - label: "Contenu principal"
+        name: "content"
+        file: "data/content.json"
+        format: "json"
+        fields:
+          - label: "Images du concept"
+            name: "conceptImages"
+            widget: list
+            field:
+              label: "Image"
+              name: ""
+              widget: image
+          - label: "Titre Menu"
+            name: "menuSubheading"
+            widget: string
+          - label: "Texte CTA"
+            name: "ctaText"
+            widget: text
