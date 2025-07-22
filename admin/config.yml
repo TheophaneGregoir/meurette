@@ -21,3 +21,23 @@ collections:
           - label: "Toppings"
             name: "toppings"
             widget: list
+          - label: "Nom du menu"
+            name: "menu_name"
+            widget: string
+  - name: "contenu"
+    label: "Contenu"
+    files:
+      - label: "Contenu du site"
+        name: "content"
+        file: "data/content.json"
+        format: "json"
+        fields:
+          - label: "Image 1 - Section concept"
+            name: "concept_img1"
+            widget: image
+          - label: "Image 2 - Section concept"
+            name: "concept_img2"
+            widget: image
+          - label: "Message de recrutement"
+            name: "cta_text"
+            widget: text
