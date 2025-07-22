@@ -4,6 +4,7 @@ fetch('data/menu.json')
     const platList = document.getElementById('plat-list');
     const accList = document.getElementById('accompagnement-list');
     const topList = document.getElementById('topping-list');
+    const menuNameEl = document.getElementById('menu-name');
     if (platList) {
       platList.innerHTML = '';
       data.plats.forEach(item => {
@@ -27,6 +28,9 @@ fetch('data/menu.json')
         li.textContent = item;
         topList.appendChild(li);
       });
+    }
+    if (menuNameEl && data.menu_name) {
+      menuNameEl.textContent = data.menu_name;
     }
   })
   .catch(err => {
