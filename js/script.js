@@ -101,6 +101,20 @@ function checkFlexGap() {
 }
 checkFlexGap();
 
+// Send email when the recruiting form is submitted
+const ctaFormEl = document.getElementById("cta-form");
+if (ctaFormEl) {
+  ctaFormEl.addEventListener("submit", function (e) {
+    e.preventDefault();
+    const name = document.getElementById("full-name").value;
+    const email = document.getElementById("email").value;
+    const subject = encodeURIComponent("Candidature via site Meurette");
+    const body = encodeURIComponent(`Nom: ${name}\nEmail: ${email}`);
+    window.location.href =
+      `mailto:theophane.gregoir13@gmail.com?subject=${subject}&body=${body}`;
+  });
+}
+
 // https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js
 
 /*
