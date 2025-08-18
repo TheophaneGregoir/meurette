@@ -1,22 +1,28 @@
 {
   "plats": [
-    "Boeuf Bourguignon",
-    "Blanquette de veau",
-    "Coq au vin",
-    "Curry de légumes"
+    "Poulet à l'échalote",
+    "Boeuf au poivre",
+    "Cordons bleu au Comté",
+    "Saucisse au couteau",
+    "Gratin de ravioles"
   ],
   "accompagnements": [
-    "Haricots verts",
+    "Pépinettes",
+    "Riz",
+    "Purée",
+    "Haricots verts à l'ail",
+    "Carottes rôties au cumin",
     "Ratatouille",
-    "Purée de pommes de terre",
-    "Pâtes",
-    "Salade verte",
-    "Riz blanc"
+    "Pommes au four"
   ],
   "toppings": [
-    "Oignons frits",
-    "Champignons sautés",
-    "Croûtons"
+    "Sauce Vierge",
+    "Pesto d'Epinards",
+    "Confit d'oignons",
+    "Moutarde à l'ancienne",
+    "Coriandre",
+    "Ciboulette",
+    "Persil"
   ],
-  "menu_name": "Menu"
+  "menu_name": "Menu de la semaine (18/08)"
 }
