@@ -134,7 +134,7 @@ queries. In fact, 1rem=1em=16px */
     height: 100vh;
     transform: translateX(100%);
 
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
     transition: all 0.5s ease-in;
@@ -152,6 +152,7 @@ queries. In fact, 1rem=1em=16px */
   }
 
   .nav-open .main-nav {
+    display: flex;
     opacity: 1;
     pointer-events: auto;
     visibility: visible;
