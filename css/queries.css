@@ -91,6 +91,10 @@ queries. In fact, 1rem=1em=16px */
     font-size: 50%;
   }
 
+  body {
+    overflow-x: hidden;
+  }
+
   .grid {
     display: grid;
     column-gap: 2.4rem;
