@@ -300,20 +300,6 @@
   position: relative;
 }
 
-.restaurant-element-second::before {
-  content: "On arrive !";
-  position: absolute;
-  top: 16%;
-  right: -18%;
-  text-transform: uppercase;
-  font-size: 1.8rem;
-  font-weight: 700;
-  color: #fff;
-  background-color: #d84d52;
-  padding: 0.8rem 8rem;
-  transform: rotate(45deg);
-}
-
 .restaurant-header {
   font-family: "Montserrat", sans-serif;
   color: #fff;
