@@ -1,13 +1,13 @@
 {
   "plats": [
-    "Poulet aux Morilles",
-    "Boeuf à la méditerranéenne",
+    "Poulet tomates confites et olives",
+    "Boeuf à la provencale",
     "Cordons bleu au Comté",
     "Saucisse au couteau",
     "Gratin de ravioles"
   ],
   "accompagnements": [
-    "Lentilles",
+    "Pépinettes de Savoie",
     "Riz",
     "Purée",
     "Haricots verts à l'ail",
@@ -17,12 +17,12 @@
   ],
   "toppings": [
     "Sauce Vierge",
-    "Pesto d'Epinards",
+    "",
     "Confit d'oignons",
     "Moutarde à l'ancienne",
     "Coriandre",
     "Ciboulette",
-    "Persil"
+    "Persi"
   ],
-  "menu_name": "Menu de la semaine (18/08)"
+  "menu_name": "Menu de la semaine (27/10)"
 }
