@@ -307,25 +307,6 @@
     url("../img/images/restaurants/DSC08721.png");
 }
 
-.restaurant-element-upcoming {
-  position: relative;
-}
-
-.restaurant-element-upcoming::before {
-  content: "Ouverture prochaine";
-  position: absolute;
-  top: 18%;
-  right: -22%;
-  text-transform: uppercase;
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: #fff;
-  background-color: #d84d52;
-  padding: 0.8rem 5.2rem;
-  transform: rotate(45deg);
-  white-space: nowrap;
-}
-
 .restaurant-header {
   font-family: "Montserrat", sans-serif;
   color: #fff;
