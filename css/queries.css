@@ -323,13 +323,6 @@ queries. In fact, 1rem=1em=16px */
     margin-bottom: 2.4rem;
   }
 
-  .restaurant-element-upcoming::before {
-    top: 22%;
-    right: -16%;
-    font-size: 1.2rem;
-    padding: 0.7rem 4.2rem;
-  }
-
   /* Section CTA */
 
   .section-cta {
@@ -369,20 +362,5 @@ queries. In fact, 1rem=1em=16px */
   }
   .copyright-col {
     grid-column: 1 / -1;
-  }
-}
-
-/***********************/
-/* BELOW 520px (Mobile) */
-/***********************/
-
-/* 33em because 520px/16px */
-
-@media (max-width: 33em) {
-  .restaurant-element-upcoming::before {
-    top: 23%;
-    right: -11%;
-    font-size: 1.1rem;
-    padding: 0.6rem 3.4rem;
   }
 }
